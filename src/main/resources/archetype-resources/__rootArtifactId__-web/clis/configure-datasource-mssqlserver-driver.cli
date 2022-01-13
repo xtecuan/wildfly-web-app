@@ -1,0 +1,8 @@
+#Adds a datasource with overloadable parameters using system environment variables
+data-source add \
+  --name=${rootArtifactId}_pool \
+  --jndi-name=java:jboss/datasources/${rootArtifactId}_DS \
+  --driver-name=mssqlserver \
+  --connection-url=jdbc:sqlserver://localhost:1433;databaseName=${databaseName} \
+  --user-name=${databaseUsername} \
+  --password=${databasePassword}

@@ -1,0 +1,123 @@
+<archetype-descriptor
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 https://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        name="wildfly-web-app" partial="false">
+
+    <requiredProperties>
+        <requiredProperty key="databaseDriver">
+            <defaultValue>postgresql-driver</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="databaseName">
+            <defaultValue>sampledb</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="databaseUsername">
+            <defaultValue>myuser</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="databasePassword">
+            <defaultValue>mypass</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="jpaDialect">
+            <defaultValue>org.hibernate.dialect.PostgreSQL82Dialect</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
+    <fileSets>
+        <fileSet encoding="UTF-8">
+            <directory>.mvn</directory>
+            <includes>
+                <include>**/*.jar</include>
+                <include>**/*.properties</include>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory>repository</directory>
+            <includes>
+                <include>**/*.xml</include>
+                <include>**/*.pom</include>
+                <include>**/*.jar</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>.gitignore</include>
+                <include>LICENSE</include>
+                <include>mvnw</include>
+                <include>mvnw.cmd</include>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <modules>
+        <module id="primefaces-paradise-custom" dir="primefaces-paradise-custom" name="primefaces-paradise-custom">
+            <fileSets>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                </fileSet>
+            </fileSets>
+        </module>
+        <module id="${rootArtifactId}-web" dir="__rootArtifactId__-web" name="${rootArtifactId}-web">
+            <fileSets>
+                <fileSet encoding="UTF-8">
+                    <directory>.mvn</directory>
+                    <includes>
+                        <include>**/*.jar</include>
+                        <include>**/*.properties</include>
+                        <include>**/*.java</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>bats</directory>
+                    <includes>
+                        <include>**/*.bat</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" packaged="false" encoding="UTF-8">
+                    <directory>clis</directory>
+                    <includes>
+                        <include>**/*.cli</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>shs</directory>
+                    <includes>
+                        <include>**/*.sh</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                    <includes>
+                        <include>**/.java</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" packaged="false" encoding="UTF-8">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/*.properties</include>
+                        <include>**/*.xml</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/webapp</directory>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory></directory>
+                    <includes>
+                        <includes>
+                            <include>.gitignore</include>
+                            <include>LICENSE</include>
+                            <include>mvnw</include>
+                            <include>mvnw.cmd</include>
+                            <include>README.md</include>
+                        </includes>
+                    </includes>
+                </fileSet>
+            </fileSets>
+        </module>
+    </modules>
+</archetype-descriptor>
