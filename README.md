@@ -6,7 +6,7 @@ Archetype for generate WildFly Bootable JAR Web Application
 * Clone this repository project.
 * Do: `mvn clean verify`
 
-#Usage:
+## Usage:
 
 ` mvn archetype:generate                                  \
       -DarchetypeGroupId=com.xtesoft.archetypes.wildfly.bootable.jar                \
