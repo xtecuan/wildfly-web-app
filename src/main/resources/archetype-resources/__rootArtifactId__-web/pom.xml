@@ -114,11 +114,11 @@
             <artifactId>commons-beanutils</artifactId>
             <version>1.9.4</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>${groupId}</groupId>
             <artifactId>primefaces-paradise-custom</artifactId>
             <version>4.0.0</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

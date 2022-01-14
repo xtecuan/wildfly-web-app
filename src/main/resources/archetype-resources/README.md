@@ -9,7 +9,7 @@ ${artifactId} (WildFly Bootable JAR)
 ## Running the project
 
 * Do: `cd ${artifactId}-web`
-* Run: `pack-run.sh` or `pack-run.bat`
+* Run: `shs/pack-run.sh` or `bats\pack-run.bat`
 
 
 ## Development mode (watch of your source files)
@@ -22,8 +22,8 @@ ${artifactId} (WildFly Bootable JAR)
 
 ## Developer Mode  (with re-packaging)
 * Do: `cd ${artifactId}-web`
-* Start devmode: `devmode-start.sh` or `devmode-start.bat`
+* Start devmode: `shs/devmode-start.sh` or `bats\devmode-start.bat`
 * Make some code changes
-* Publish changes: `devmode-publish.sh` or `devmode-publish.bat`
-* Stop devmode: `devmode-stop.sh` or `devmode-stop.bat`
-* Access devmode logs: `devmode-logs.sh` or `devmode-logs.bat`
+* Publish changes: `shs/devmode-publish.sh` or `bats\devmode-publish.bat`
+* Stop devmode: `shs/devmode-stop.sh` or `bats\devmode-stop.bat`
+* Access devmode logs: `shs/devmode-logs.sh` or `bats\devmode-logs.bat`

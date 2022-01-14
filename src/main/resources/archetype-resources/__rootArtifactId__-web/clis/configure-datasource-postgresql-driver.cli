@@ -2,7 +2,7 @@
 data-source add \
   --name=${rootArtifactId}_pool \
   --jndi-name=java:jboss/datasources/${rootArtifactId}_DS \
-  --driver-name=mssqlserver \
+  --driver-name=postgresql \
   --connection-url=jdbc:postgresql://localhost:5432/${databaseName} \
   --user-name=${databaseUsername} \
   --password=${databasePassword}

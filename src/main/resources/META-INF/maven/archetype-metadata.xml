@@ -12,10 +12,10 @@
             <defaultValue>sampledb</defaultValue>
         </requiredProperty>
         <requiredProperty key="databaseUsername">
-            <defaultValue>myuser</defaultValue>
+            <defaultValue>postgres</defaultValue>
         </requiredProperty>
         <requiredProperty key="databasePassword">
-            <defaultValue>mypass</defaultValue>
+            <defaultValue>Welcome123$</defaultValue>
         </requiredProperty>
         <requiredProperty key="version">
             <defaultValue>1.0.0-SNAPSHOT</defaultValue>
@@ -54,14 +54,15 @@
         </fileSet>
     </fileSets>
     <modules>
-        <module id="primefaces-paradise-custom" dir="primefaces-paradise-custom" name="primefaces-paradise-custom">
+        <!--<module id="primefaces-paradise-custom" dir="primefaces-paradise-custom" name="primefaces-paradise-custom">
             <fileSets>
                 <fileSet encoding="UTF-8">
                     <directory>src/main/java</directory>
                 </fileSet>
             </fileSets>
-        </module>
+        </module>-->
         <module id="${rootArtifactId}-web" dir="__rootArtifactId__-web" name="${rootArtifactId}-web">
+
             <fileSets>
                 <fileSet encoding="UTF-8">
                     <directory>.mvn</directory>
@@ -92,7 +93,7 @@
                 <fileSet filtered="true" packaged="true" encoding="UTF-8">
                     <directory>src/main/java</directory>
                     <includes>
-                        <include>**/.java</include>
+                        <include>**/*.java</include>
                     </includes>
                 </fileSet>
                 <fileSet filtered="true" packaged="false" encoding="UTF-8">
@@ -105,17 +106,18 @@
                 <fileSet encoding="UTF-8">
                     <directory>src/main/webapp</directory>
                 </fileSet>
-                <fileSet filtered="true" encoding="UTF-8">
+                <fileSet encoding="UTF-8">
                     <directory></directory>
                     <includes>
-                        <includes>
-                            <include>.gitignore</include>
-                            <include>LICENSE</include>
-                            <include>mvnw</include>
-                            <include>mvnw.cmd</include>
-                            <include>README.md</include>
-                        </includes>
+                        <include>.gitignore</include>
+                        <include>LICENSE</include>
+                        <include>mvnw</include>
+                        <include>mvnw.cmd</include>
+                        <include>README.md</include>
                     </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8">
+                    <directory>src/main/java/org/primefaces/paradise</directory>
                 </fileSet>
             </fileSets>
         </module>

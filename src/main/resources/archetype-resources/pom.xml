@@ -87,7 +87,7 @@
 
     <modules>
         <module>${rootArtifactId}-web</module>
-        <module>primefaces-paradise-custom</module>
+        <!--<module>primefaces-paradise-custom</module>-->
     </modules>
 
     <build>
