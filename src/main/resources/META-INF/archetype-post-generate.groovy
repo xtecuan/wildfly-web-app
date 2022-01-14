@@ -25,3 +25,5 @@ Files.deleteIfExists projectPath.resolve(request.artifactId+"-web/src/main/java/
 Files.deleteIfExists projectPath.resolve(request.artifactId+"-web/src/main/java/" + packagePath + "/org/primefaces/paradise")
 Files.deleteIfExists projectPath.resolve(request.artifactId+"-web/src/main/java/" + packagePath + "/org/primefaces")
 Files.deleteIfExists projectPath.resolve(request.artifactId+"-web/src/main/java/" + packagePath + "/org")
+
+
