@@ -23,6 +23,9 @@
         <requiredProperty key="jpaDialect">
             <defaultValue>org.hibernate.dialect.PostgreSQL82Dialect</defaultValue>
         </requiredProperty>
+        <requiredProperty key="databaseTablesCreationStrategy">
+            <defaultValue>create-drop</defaultValue>
+        </requiredProperty>
     </requiredProperties>
 
     <fileSets>
