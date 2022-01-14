@@ -8,10 +8,10 @@ Archetype for generate WildFly Bootable JAR Web Application
 
 ## Usage:
 
-` mvn archetype:generate                                  \
+     mvn archetype:generate                                  \
       -DarchetypeGroupId=com.xtesoft.archetypes.wildfly.bootable.jar                \
       -DarchetypeArtifactId=wildfly-web-app          \
       -DarchetypeVersion=1.0.0                \
       -DgroupId=sv.com.your.organization                               \
-      -DartifactId=yourprojectname `
+      -DartifactId=yourprojectname 
 
